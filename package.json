@@ -1,0 +1,21 @@
+{
+  "name": "electron-test",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "build-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=src/img/appicon.png --prune=true --out=release-builds",
+    "build-win": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --icon=src/img/appicon.png --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Inodesia\"",
+    "build-linux" : "electron-packager . --overwrite --platform=linux --arch=x64 --icon=src/img/appicon.png --prune=true --out=release-builds"
+  },
+  "author": "Hadi Hidayat Hammurabi <didikipb007@gmail.com> (themindware.blogspot.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.6.2",
+    "electron-packager": "^8.6.0",
+    "sqlite3": "^3.1.8"
+  },
+  "dependencies": {
+  }
+}
